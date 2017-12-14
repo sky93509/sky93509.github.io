@@ -38,3 +38,22 @@
     // Register the extension
     ScratchExtensions.register('Alarm extension', descriptor, ext);
 })({});
+var descriptor = {
+    塊： [
+        [ ' w '，'打開電機開啟％n秒'，              ' motorOnFor '，1 ]，
+        [ '  '，'打開電機'，                          ' allMotorsOn ' ]，
+        [ '  '，'關閉電機'，                         ' allMotorsOff ' ]，
+        [ '  '，'設定電機功率％n '，                     ' startMotorPower '，100 ]，
+        [ '  '，'設置電機方向％m.motorDirection '，' setMotorDirection '，'這樣' ]，
+        [ ' h '，' when distance％m.lessMore％n '，           ' whenDistance '，' < '，20 ]，
+        [ ' h '，' when tilt％m.eNe％n '，                    ' whenTilt '，' = '，1 ]，
+        [ ' r '，' distance '，                               ' getDistance ' ]，
+        [ ' r '，'傾斜'，                                   ' getTilt ' ]
+    ]
+    菜單： {
+        motorDirection ： [ '這樣'，'那樣'，'反向' ]，
+        lessMore ： [ ' < '，' > ' ]，
+        eNe ： [ ' = '，' not = ' ]
+    }，
+    url ： ' http : //info.scratch.mit.edu/WeDo ' 
+};
