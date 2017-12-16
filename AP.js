@@ -43,7 +43,7 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['r', 'current temperature in city %s', 'get_temp', 'Boston, MA'],
+            ['R', 'current temperature in city %s', 'get_temp', 'Boston, MA'],
 		    ['', 'IP %s %m.playUrlMusicItems 播放線上音樂: %s', 'playUrlMusic', "192.168.0.1", '開始', 'https://zenboscratch.github.io/examples/zenbo_music.mp3'],
         ]
     };
