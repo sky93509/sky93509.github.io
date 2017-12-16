@@ -17,6 +17,7 @@
                   // Got the data - parse it and return the temperature
                   temperature = weather_data['main']['temp'];
                   callback(temperature);
+				  console.log("temperature");
               }
         });
     };
@@ -43,7 +44,7 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['r', 'current temperature in city %s', 'get_temp', 'Boston, MA'],
+            ['','data %s  %m.current temperature in city %s', 'temperature','檢測', 'Boston, MA'],
 		    ['', 'IP %s %m.playUrlMusicItems 播放線上音樂: %s', 'playUrlMusic', "192.168.0.1", '開始', 'https://zenboscratch.github.io/examples/zenbo_music.mp3'],
         ]
     };
