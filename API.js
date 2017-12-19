@@ -32,7 +32,7 @@ var tem = 0;
     var descriptor = {
         blocks: [
             ['R', 'current temperature in city %s', 'get_temp', 'Boston, MA'],
-		 [' ', 'my first block', 'tem'],
+		 [' ', 'my first block %s', 'tem'],
         ]
     };
 
