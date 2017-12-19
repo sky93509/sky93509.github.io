@@ -1,4 +1,5 @@
 
+var tem = 0;
 (function(ext) {
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
@@ -7,6 +8,17 @@
     // Use this to report missing hardware, plugin or unsupported browser
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
+    };
+	 ext.my_first_block = function() {
+        // Code that gets executed when the block is run
+    };
+
+    // Block and block menu descriptions
+    var descriptor = {
+        blocks: [
+            // Block type, block name, function name
+            [' ', 'my first block', 'my_first_block'],
+        ]
     };
 
     ext.get_temp = function(location, callback) {
@@ -18,7 +30,7 @@
                   // Got the data - parse it and return the temperature
                   temperature = weather_data['main']['temp'];
                   callback(temperature);
-				  alert(temperature);
+		      tem = temperature;
               }
         });
     };
