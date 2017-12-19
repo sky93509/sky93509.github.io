@@ -1,5 +1,3 @@
-
-var tem = 0;
 (function(ext) {
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
@@ -9,10 +7,6 @@ var tem = 0;
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
-	 ext.my_first_block = function() {
-        // Code that gets executed when the block is run
-    };
-
 
     ext.get_temp = function(location, callback) {
         // Make an AJAX call to the Open Weather Maps API
@@ -23,7 +17,6 @@ var tem = 0;
                   // Got the data - parse it and return the temperature
                   temperature = weather_data['main']['temp'];
                   callback(temperature);
-		      tem = temperature;
               }
         });
     };
@@ -32,7 +25,6 @@ var tem = 0;
     var descriptor = {
         blocks: [
             ['R', 'current temperature in city %s', 'get_temp', 'Boston, MA'],
-		 [' ', 'my first block %s', 'tem'],
         ]
     };
 
