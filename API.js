@@ -1,3 +1,4 @@
+
 (function(ext) {
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
@@ -17,6 +18,7 @@
                   // Got the data - parse it and return the temperature
                   temperature = weather_data['main']['temp'];
                   callback(temperature);
+				  alert(temperature);
               }
         });
     };
