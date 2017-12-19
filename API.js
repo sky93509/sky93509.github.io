@@ -13,13 +13,6 @@ var tem = 0;
         // Code that gets executed when the block is run
     };
 
-    // Block and block menu descriptions
-    var descriptor = {
-        blocks: [
-            // Block type, block name, function name
-            [' ', 'my first block', 'my_first_block'],
-        ]
-    };
 
     ext.get_temp = function(location, callback) {
         // Make an AJAX call to the Open Weather Maps API
@@ -39,6 +32,7 @@ var tem = 0;
     var descriptor = {
         blocks: [
             ['R', 'current temperature in city %s', 'get_temp', 'Boston, MA'],
+		 [' ', 'my first block', 'tem'],
         ]
     };
 
