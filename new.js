@@ -1,4 +1,5 @@
 (function(ext) {
+	 var APPID = '70bf11aeffdf1ca6430a2a5909b515f0';
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
 
@@ -10,16 +11,16 @@
 
     ext.get_temp = function(location, callback) {
         // Make an AJAX call to the Open Weather Maps API
-    $.ajax({
+        $.ajax({
       url: 'http://api.openweathermap.org/data/2.5/weather',
       data: {q: location, units: 'imperial', appid: APPID},
-      dataType: 'jsonp',
-      success: function(weatherData) {
-        //Received the weather data. Cache and return the data.
-        cachedTemps[location] = {data: weatherData, time: Date.now()};
-        callback(weatherData);
-      }
-    });
+              dataType: 'jsonp',
+              success: function( weather_data ) {
+                  // Got the data - parse it and return the temperature
+                  temperature = weather_data['main']['temp'];
+                  callback(temperature);
+              }
+        });
     };
 
     // Block and block menu descriptions
