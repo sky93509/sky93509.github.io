@@ -150,6 +150,70 @@
 						flagArray.data[flagIndex].sentence_12_flag = true;
 
 					   break;
+						
+						case '語句十三':
+
+						console.log('辨識到語句十三');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_13_flag true");
+						flagArray.data[flagIndex].sentence_13_flag = true;
+
+					   break;
+						
+						case '語句十四':
+
+						console.log('辨識到語句十四');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_14_flag true");
+						flagArray.data[flagIndex].sentence_14_flag = true;
+
+					   break;
+						
+						case '語句十五':
+
+						console.log('辨識到語句十五');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_15_flag true");
+						flagArray.data[flagIndex].sentence_15_flag = true;
+
+					   break;
+						
+						case '語句十六':
+
+						console.log('辨識到語句十六');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_16_flag true");
+						flagArray.data[flagIndex].sentence_16_flag = true;
+
+					   break;
+						
+						case '語句十七':
+
+						console.log('辨識到語句十七');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_17_flag true");
+						flagArray.data[flagIndex].sentence_17_flag = true;
+
+					   break;
+						
+						case '語句十八':
+
+						console.log('辨識到語句十八');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_18_flag true");
+						flagArray.data[flagIndex].sentence_18_flag = true;
+
+					   break;
+						
+						case '語句十九':
+
+						console.log('辨識到語句十九');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_19_flag true");
+						flagArray.data[flagIndex].sentence_19_flag = true;
+
+					   break;
+						
+						case '語句二十':
+
+						console.log('辨識到語句二十');                   
+						console.log( ip + " "  + flagIndex + " " + "sentence_20_flag true");
+						flagArray.data[flagIndex].sentence_20_flag = true;
+
+					   break;
 					   
 				}  
 
@@ -613,9 +677,144 @@
 		   console.log('true 語句五');    
            return true;
        }
-
+		    
        break;
-       
+     
+ case '語句六':
+        
+       if (flagArray.data[valueIndex].sentence_6_flag === true) {
+           flagArray.data[valueIndex].sentence_6_flag = false;
+		   console.log('true 語句六'); 
+           return true;
+       }
+
+        break;
+		     case '語句七':
+        
+       if (flagArray.data[valueIndex].sentence_7_flag === true) {
+           flagArray.data[valueIndex].sentence_7_flag = false;
+		   console.log('true 語句七'); 
+           return true;
+       }
+
+        break;
+		     case '語句八':
+        
+       if (flagArray.data[valueIndex].sentence_8_flag === true) {
+           flagArray.data[valueIndex].sentence_8_flag = false;
+		   console.log('true 語句八'); 
+           return true;
+       }
+
+        break;
+		     case '語句九':
+        
+       if (flagArray.data[valueIndex].sentence_9_flag === true) {
+           flagArray.data[valueIndex].sentence_9_flag = false;
+		   console.log('true 語句九'); 
+           return true;
+       }
+
+        break;
+		     case '語句十':
+        
+       if (flagArray.data[valueIndex].sentence_10_flag === true) {
+           flagArray.data[valueIndex].sentence_10_flag = false;
+		   console.log('true 語句十'); 
+           return true;
+       }
+
+        break;
+		     case '語句十一':
+        
+       if (flagArray.data[valueIndex].sentence_11_flag === true) {
+           flagArray.data[valueIndex].sentence_11_flag = false;
+		   console.log('true 語句十一'); 
+           return true;
+       }
+
+        break;
+		     case '語句十二':
+        
+       if (flagArray.data[valueIndex].sentence_12_flag === true) {
+           flagArray.data[valueIndex].sentence_12_flag = false;
+		   console.log('true 語句十二'); 
+           return true;
+       }
+
+        break;
+		     case '語句十三':
+        
+       if (flagArray.data[valueIndex].sentence_13_flag === true) {
+           flagArray.data[valueIndex].sentence_13_flag = false;
+		   console.log('true 語句十三'); 
+           return true;
+       }
+
+        break;
+		     case '語句十四':
+        
+       if (flagArray.data[valueIndex].sentence_14_flag === true) {
+           flagArray.data[valueIndex].sentence_14_flag = false;
+		   console.log('true 語句十四'); 
+           return true;
+       }
+
+        break;
+		     case '語句十五':
+        
+       if (flagArray.data[valueIndex].sentence_15_flag === true) {
+           flagArray.data[valueIndex].sentence_15_flag = false;
+		   console.log('true 語句十五'); 
+           return true;
+       }
+
+        break;
+		     case '語句十六':
+        
+       if (flagArray.data[valueIndex].sentence_16_flag === true) {
+           flagArray.data[valueIndex].sentence_16_flag = false;
+		   console.log('true 語句十六'); 
+           return true;
+       }
+
+        break;
+		     case '語句十七':
+        
+       if (flagArray.data[valueIndex].sentence_17_flag === true) {
+           flagArray.data[valueIndex].sentence_17_flag = false;
+		   console.log('true 語句十七'); 
+           return true;
+       }
+
+        break;
+		     case '語句十八':
+        
+       if (flagArray.data[valueIndex].sentence_18_flag === true) {
+           flagArray.data[valueIndex].sentence_18_flag = false;
+		   console.log('true 語句十八'); 
+           return true;
+       }
+
+        break;
+		     case '語句十九':
+        
+       if (flagArray.data[valueIndex].sentence_19_flag === true) {
+           flagArray.data[valueIndex].sentence_19_flag = false;
+		   console.log('true 語句十九'); 
+           return true;
+       }
+
+        break;
+		     case '語句二十':
+        
+       if (flagArray.data[valueIndex].sentence_20_flag === true) {
+           flagArray.data[valueIndex].sentence_20_flag = false;
+		   console.log('true 語句二十'); 
+           return true;
+       }
+
+        break;
    }
      return false;
     };
@@ -940,7 +1139,7 @@ ext.Add_and_update_sentence_number = function (ip) {
             "music_type": ["開始", "暫停", "繼續", "停止", "重新"],
             "volume_option_type": ["音樂", "鬧鐘", "通知", "說話"],
             "tts_speed_type": ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8"],
-            "sentence_type": ["語句一", "語句二", "語句三", "語句四", "語句五", "語句六", "語句七", "語句八", "語句九", "語句十", "語句十一", "語句十二"],
+            "sentence_type": ["語句一", "語句二", "語句三", "語句四", "語句五", "語句六", "語句七", "語句八", "語句九", "語句十", "語句十一", "語句十二", "語句十三", "語句十四", "語句十五", "語句十六", "語句十七", "語句十八", "語句十九", "語句二十二"],
             "playVideosInYoutubeItems": ["開始", "關閉"],
             "displayUrlPicturesItems": ["開始", "關閉"],
             "playUrlMusicItems": ["開始", "關閉"],
